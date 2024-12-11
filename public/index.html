@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced E-commerce</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Enhanced E-commerce App</h1>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search products...">
+        </div>
+        <div class="cart">
+            <a href="#" id="cart-link">🛒 Cart (<span id="cart-count">0</span>)</a>
+        </div>
+    </header>
+
+    <!-- Sidebar (Categories) -->
+    <aside>
+        <h3>Categories</h3>
+        <ul id="categories"></ul>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main>
+        <div id="filters">
+            <select id="sort">
+                <option value="price-asc">Sort by Price: Low to High</option>
+                <option value="price-desc">Sort by Price: High to Low</option>
+                <option value="rating-desc">Sort by Rating</option>
+            </select>
+        </div>
+        <div id="products-container">
+            <p>Loading products...</p>
+        </div>
+        <div id="network-status" class="network-status hidden">
+            <div class="network-status-icon"></div>
+            <span class="network-status-message">Network status</span>
+          </div>
+          
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Enhanced E-commerce App</p>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-modal-content">
+            <span id="cart-modal-close" class="close">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items-container"></div>
+            <div class="cart-total-price">
+                <p>Total: $<span id="cart-total-price">0.00</span></p>
+            </div>
+            <!-- Billing Button -->
+            <button id="billing-button" class="billing-button">Proceed to Billing</button>
+        </div>
+       
+    </div>
+  
+    <script type="module" src="js/main.js"></script>
+  
+</body>
+
+</html>
